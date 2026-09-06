@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@config "../tailwind.config.js";
+
+@layer base {
+  :root {
+    --color-background: 248 250 252;
+    --color-surface: 255 255 255;
+    --color-surface-hover: 241 245 249;
+    --color-border: 226 232 240;
+    --color-primary: 2 132 199;
+    --color-primary-hover: 3 105 161;
+    --color-navy: 224 242 254;
+    --color-text-main: 15 23 42;
+    --color-text-muted: 100 116 139;
+    --color-grid: rgba(0, 0, 0, 0.04);
+  }
+
+  .dark {
+    --color-background: 15 23 42;
+    --color-surface: 30 41 59;
+    --color-surface-hover: 51 65 85;
+    --color-border: 51 65 85;
+    --color-primary: 56 189 248;
+    --color-primary-hover: 125 211 252;
+    --color-navy: 12 74 110;
+    --color-text-main: 248 250 252;
+    --color-text-muted: 148 163 184;
+    --color-grid: rgba(255, 255, 255, 0.04);
+  }
+
+  body {
+    @apply bg-background text-text-main font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, var(--color-grid) 1px, transparent 1px),
+                      linear-gradient(to bottom, var(--color-grid) 1px, transparent 1px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
