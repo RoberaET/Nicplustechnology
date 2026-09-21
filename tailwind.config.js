@@ -23,11 +23,12 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['"Space Grotesk"', 'monospace'],
       },
       backgroundImage: {
         'grid-pattern': 'linear-gradient(to right, #cbd5e1 1px, transparent 1px), linear-gradient(to bottom, #cbd5e1 1px, transparent 1px)',
-        'tech-gradient': 'radial-gradient(circle at top, rgba(2, 132, 199, 0.08) 0%, transparent 50%)',
+        'tech-gradient': 'radial-gradient(circle at top, rgba(14, 165, 233, 0.12) 0%, transparent 60%)',
       }
     },
   },

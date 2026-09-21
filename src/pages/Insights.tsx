@@ -20,7 +20,7 @@ export function Insights() {
             {insights.map((insight) => (
               <Link 
                 key={insight.slug}
-                to={`/insights/\${insight.slug}`}
+                to={`/insights/${insight.slug}`}
                 className="group flex flex-col bg-surface hover:bg-surfaceHover border border-border hover:border-primary/50 rounded-2xl overflow-hidden transition-all duration-300"
               >
                 <div className="aspect-video relative overflow-hidden">

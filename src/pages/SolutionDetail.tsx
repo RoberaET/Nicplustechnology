@@ -72,7 +72,7 @@ export function SolutionDetail() {
                   <ul className="flex flex-col gap-3">
                     {services.slice(0, 4).map(s => (
                       <li key={s.slug}>
-                        <Link to={`/services/\${s.slug}`} className="text-sm text-primary hover:text-text-main transition-colors">
+                        <Link to={`/services/${s.slug}`} className="text-sm text-primary hover:text-text-main transition-colors">
                           {s.title}
                         </Link>
                       </li>

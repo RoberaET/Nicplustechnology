@@ -42,7 +42,7 @@ export function Solutions() {
                   </div>
 
                   <Link 
-                    to={`/solutions/\${solution.slug}`}
+                    to={`/solutions/${solution.slug}`}
                     className="inline-flex items-center text-primary font-medium hover:text-text-main transition-colors group"
                   >
                     Explore Solution 

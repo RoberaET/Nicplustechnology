@@ -10,9 +10,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
           <div>
-            <Link to="/" className="flex items-center gap-2 mb-6 group">
-              <Activity className="h-6 w-6 text-primary" />
-              <span className="text-lg font-bold tracking-wider text-text-main">NIC+ TECHNOLOGIES</span>
+            <Link to="/" className="flex items-center mb-6 group">
+              <img src="/logo.png" alt="NIC+ TECHNOLOGIES" className="h-10 w-auto" />
             </Link>
             <p className="text-text-muted text-sm mb-6 leading-relaxed">
               Technology infrastructure built for businesses that cannot afford downtime. We design, deploy, secure, and support modern business networks.
@@ -24,7 +23,7 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               {services.slice(0, 6).map((service) => (
                 <li key={service.slug}>
-                  <Link to={`/services/\${service.slug}`} className="text-sm text-text-muted hover:text-primary transition-colors">
+                  <Link to={`/services/${service.slug}`} className="text-sm text-text-muted hover:text-primary transition-colors">
                     {service.title}
                   </Link>
                 </li>
@@ -37,7 +36,7 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               {solutions.slice(0, 4).map((solution) => (
                 <li key={solution.slug}>
-                  <Link to={`/solutions/\${solution.slug}`} className="text-sm text-text-muted hover:text-primary transition-colors">
+                  <Link to={`/solutions/${solution.slug}`} className="text-sm text-text-muted hover:text-primary transition-colors">
                     {solution.title}
                   </Link>
                 </li>

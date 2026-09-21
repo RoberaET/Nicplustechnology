@@ -206,7 +206,7 @@ export function Navbar() {
               <h3 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">Services</h3>
               <div className="flex flex-col gap-3 pl-4 border-l border-border">
                 {services.map(s => (
-                  <Link key={s.slug} to={`/services/\${s.slug}`} className="text-text-main">
+                  <Link key={s.slug} to={`/services/${s.slug}`} className="text-text-main">
                     {s.title}
                   </Link>
                 ))}

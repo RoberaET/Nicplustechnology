@@ -5,7 +5,7 @@ import type { Project } from '../../data/projects';
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <Link 
-      to={`/projects/\${project.slug}`}
+      to={`/projects/${project.slug}`}
       className="group flex flex-col bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/50 transition-all duration-300 h-full"
     >
       <div className="relative h-48 sm:h-60 overflow-hidden">
