@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @config "../tailwind.config.js";
+@variant dark (&:where(.dark, .dark *));
 
 @layer base {
   :root {
@@ -8,25 +9,25 @@
     --color-surface: 255 255 255;
     --color-surface-hover: 241 245 249;
     --color-border: 226 232 240;
-    --color-primary: 2 132 199;
-    --color-primary-hover: 3 105 161;
-    --color-navy: 224 242 254;
+    --color-primary: 99 49 251;
+    --color-primary-hover: 79 31 220;
+    --color-navy: 241 245 249;
     --color-text-main: 15 23 42;
     --color-text-muted: 100 116 139;
-    --color-grid: rgba(0, 0, 0, 0.04);
+    --color-grid: rgba(99, 49, 251, 0.05);
   }
 
   .dark {
-    --color-background: 15 23 42;
-    --color-surface: 30 41 59;
-    --color-surface-hover: 51 65 85;
-    --color-border: 51 65 85;
-    --color-primary: 56 189 248;
-    --color-primary-hover: 125 211 252;
-    --color-navy: 12 74 110;
-    --color-text-main: 248 250 252;
-    --color-text-muted: 148 163 184;
-    --color-grid: rgba(255, 255, 255, 0.04);
+    --color-background: 1 1 13;
+    --color-surface: 9 9 24;
+    --color-surface-hover: 18 16 42;
+    --color-border: 34 32 68;
+    --color-primary: 99 49 251;
+    --color-primary-hover: 136 249 192;
+    --color-navy: 20 16 48;
+    --color-text-main: 255 255 255;
+    --color-text-muted: 156 163 175;
+    --color-grid: rgba(99, 49, 251, 0.07);
   }
 
   body {
@@ -35,6 +36,13 @@
 }
 
 @layer utilities {
+  .font-display {
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    letter-spacing: 0.02em;
+  }
+  .font-editorial-serif {
+    font-family: 'Instrument Serif', Georgia, serif;
+  }
   .bg-grid {
     background-size: 40px 40px;
     background-image: linear-gradient(to right, var(--color-grid) 1px, transparent 1px),

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ElegantArrowRight } from '../icons';
 import type { Service } from '../../data/services';
 import SpotlightCard from '../ui/SpotlightCard';
 
@@ -15,7 +15,7 @@ export function ServiceCard({ service }: { service: Service }) {
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10" />
         
         <div className="bg-navy p-3 rounded-lg w-fit mb-6 border border-border group-hover:border-primary/30 transition-colors relative z-10">
-          <Icon className="h-6 w-6 text-primary" />
+          <Icon size={24} className="text-primary" />
         </div>
         
         <h3 className="text-xl font-bold text-text-main mb-3 relative z-10">{service.title}</h3>
@@ -25,7 +25,7 @@ export function ServiceCard({ service }: { service: Service }) {
         
         <div className="flex items-center text-sm font-medium text-primary mt-auto relative z-10">
           Learn more 
-          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+          <ElegantArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
         </div>
       </SpotlightCard>
     </Link>

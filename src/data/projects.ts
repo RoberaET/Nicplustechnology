@@ -28,7 +28,7 @@ export const projects: Project[] = [
     solution: 'NIC+ designed a highly available core network with proper VLAN segmentation and redundant routing.',
     implementation: 'Deployed layer 3 switches, upgraded core routers, and installed high-capacity access points across the campus.',
     result: 'Achieved 99.99% uptime, improved network speeds by 300%, and successfully passed compliance audits.',
-    technology: ['Cisco', 'Ubiquiti', 'Fiber Optic']
+    technology: ['Cisco', 'Huawei', 'Fiber Optic']
   },
   {
     slug: 'campus-surveillance-system',

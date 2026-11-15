@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Network, Sparkles, BrainCircuit, Activity, Check } from 'lucide-react';
+import { SparklesAIIcon, BrainCircuitIcon, NicLogoIcon, ElegantCheckIcon } from '../icons';
 import { cn } from '../../lib/utils';
 
 interface IntelligenceNode {
@@ -32,7 +32,7 @@ export function AIIntelligenceSection() {
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold tracking-widest text-cyan-400 bg-cyan-950/80 border border-cyan-800 uppercase mb-4">
-            <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+            <SparklesAIIcon size={16} className="text-cyan-400" />
             AI & Autonomous Systems
           </div>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight mb-6">
@@ -84,7 +84,7 @@ export function AIIntelligenceSection() {
               })}
 
               <div className="absolute bottom-4 left-4 flex items-center gap-2 text-xs font-mono text-slate-400">
-                <Activity className="w-4 h-4 text-cyan-400 animate-pulse" />
+                <NicLogoIcon size={16} className="text-cyan-400 animate-pulse" />
                 <span>INTERACTIVE TOPOLOGY • SELECT A FUNCTION</span>
               </div>
             </div>
@@ -94,7 +94,7 @@ export function AIIntelligenceSection() {
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-xl bg-cyan-400/15 border border-cyan-400/30 flex items-center justify-center text-cyan-400">
-                    <BrainCircuit className="w-5 h-5" />
+                    <BrainCircuitIcon size={22} />
                   </div>
                   <div>
                     <span className="text-[11px] font-mono tracking-widest text-cyan-400 uppercase">
@@ -112,15 +112,15 @@ export function AIIntelligenceSection() {
 
                 <div className="space-y-3 pt-4 border-t border-slate-800 text-xs">
                   <div className="flex items-center gap-2 text-slate-300">
-                    <Check className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <ElegantCheckIcon size={14} className="text-cyan-400 shrink-0" />
                     <span>Zero human intervention required</span>
                   </div>
                   <div className="flex items-center gap-2 text-slate-300">
-                    <Check className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <ElegantCheckIcon size={14} className="text-cyan-400 shrink-0" />
                     <span>Millisecond evaluation latency</span>
                   </div>
                   <div className="flex items-center gap-2 text-slate-300">
-                    <Check className="w-4 h-4 text-cyan-400 shrink-0" />
+                    <ElegantCheckIcon size={14} className="text-cyan-400 shrink-0" />
                     <span>Continuous automated learning</span>
                   </div>
                 </div>

@@ -1,6 +1,12 @@
 import { 
-  Network, Shield, Video, Key, Wifi, Wrench, Globe
-} from 'lucide-react';
+  NetworkInfrastructureIcon,
+  SecurityShieldIcon,
+  SurveillanceCameraIcon,
+  AccessControlIcon,
+  WirelessMeshIcon,
+  MaintenanceDiagnosticsIcon,
+  DigitalSolutionsIcon
+} from '../components/icons';
 
 export type ServiceCategory = 'Infrastructure' | 'Security' | 'IT & Digital';
 
@@ -26,7 +32,7 @@ export const services: Service[] = [
     tagline: 'Engineered for reliability, built to scale.',
     description: 'Design and deployment of reliable LAN, WAN, switching, routing and structured network infrastructure.',
     longDescription: 'A well-designed network is the backbone of every modern business. We plan, design, and deploy structured network infrastructure that delivers consistent performance across offices, campuses, and multi-site environments. From core routing and switching to structured cabling and fiber backbone, every element is engineered with redundancy and scalability in mind.',
-    icon: Network,
+    icon: NetworkInfrastructureIcon,
     category: 'Infrastructure',
     features: [
       'Structured Cabling (Cat6/Cat6A/Fiber)',
@@ -66,7 +72,7 @@ export const services: Service[] = [
     tagline: 'Security built into every layer of your network.',
     description: 'Security-focused infrastructure, network protection, access control and risk reduction.',
     longDescription: 'Cybersecurity is not a product — it is an architecture. We design and implement layered security controls that protect your network, data, and users. From firewall policy design and network segmentation to threat monitoring and vulnerability assessments, we help businesses reduce their attack surface and respond faster to incidents.',
-    icon: Shield,
+    icon: SecurityShieldIcon,
     category: 'Security',
     features: [
       'Firewall Design & Policy Management',
@@ -106,7 +112,7 @@ export const services: Service[] = [
     tagline: 'Complete visibility. Professional surveillance engineering.',
     description: 'Professional IP surveillance systems designed for visibility, monitoring and security.',
     longDescription: 'Modern IP surveillance goes far beyond recording footage. We design and deploy comprehensive CCTV systems that provide real-time visibility, intelligent alerting, and secure long-term storage. Whether you need to cover a single office, a multi-building campus, or a 24/7 control room, we engineer a solution to match.',
-    icon: Video,
+    icon: SurveillanceCameraIcon,
     category: 'Security',
     features: [
       'IP Camera Selection & Placement Design',
@@ -146,7 +152,7 @@ export const services: Service[] = [
     tagline: 'Secure physical access. Managed intelligently.',
     description: 'Secure physical access systems for offices, facilities and restricted environments.',
     longDescription: 'Controlling who enters your premises — and when — is fundamental to physical security. We design and deploy access control systems ranging from keycard entry for small offices to biometric multi-zone systems for large facilities. All systems include centralized management, audit logging, and integration options with HR and payroll systems.',
-    icon: Key,
+    icon: AccessControlIcon,
     category: 'Security',
     features: [
       'Biometric Fingerprint & Face Recognition',
@@ -186,7 +192,7 @@ export const services: Service[] = [
     tagline: 'Enterprise wireless. Reliable everywhere.',
     description: 'Reliable enterprise and business wireless networks designed for performance and coverage.',
     longDescription: 'Consumer-grade Wi-Fi routers are not designed for business environments. We deploy enterprise access point systems with proper RF planning, controller management, and seamless roaming to ensure every user has a fast, reliable connection anywhere on your premises — without interference, dead zones, or security gaps.',
-    icon: Wifi,
+    icon: WirelessMeshIcon,
     category: 'Infrastructure',
     features: [
       'RF Site Surveys & Coverage Planning',
@@ -226,7 +232,7 @@ export const services: Service[] = [
     tagline: 'Reliable support when your business needs it.',
     description: 'Ongoing technical support, troubleshooting and infrastructure maintenance.',
     longDescription: 'Technology only delivers value when it is working reliably. Our IT support services provide businesses with responsive technical assistance, proactive maintenance, and infrastructure management. Whether you need a dedicated support partner or supplemental technical capacity, we keep your systems running at their best.',
-    icon: Wrench,
+    icon: MaintenanceDiagnosticsIcon,
     category: 'IT & Digital',
     features: [
       'Helpdesk & Ticketing Support',
@@ -266,7 +272,7 @@ export const services: Service[] = [
     tagline: 'Modern websites built for performance and growth.',
     description: 'Modern, high-performance websites and web applications built for scale.',
     longDescription: 'A professional website is often the first point of contact between your business and potential clients. We build fast, modern, and conversion-optimized websites and web applications tailored to your brand and business goals. From landing pages to full e-commerce platforms, we deliver clean code, great performance, and easy management.',
-    icon: Globe,
+    icon: DigitalSolutionsIcon,
     category: 'IT & Digital',
     features: [
       'Custom Website Design & Development',

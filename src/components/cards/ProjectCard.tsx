@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, MapPin } from 'lucide-react';
+import { ElegantArrowRight, ElegantMapPinIcon } from '../icons';
 import type { Project } from '../../data/projects';
 
 export function ProjectCard({ project }: { project: Project }) {
@@ -28,7 +28,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <div className="flex items-center gap-2 text-xs text-text-muted mb-3">
           <span>{project.industry}</span>
           <span>•</span>
-          <span className="flex items-center"><MapPin className="h-3 w-3 mr-1" /> {project.location}</span>
+          <span className="flex items-center"><ElegantMapPinIcon size={13} className="mr-1 inline-block" /> {project.location}</span>
         </div>
         
         <h3 className="text-xl font-bold text-text-main mb-2">{project.title}</h3>
@@ -36,7 +36,7 @@ export function ProjectCard({ project }: { project: Project }) {
         
         <div className="flex items-center text-sm font-medium text-primary mt-auto">
           View Case Study
-          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+          <ElegantArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
         </div>
       </div>
     </Link>

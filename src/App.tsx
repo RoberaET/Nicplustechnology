@@ -38,7 +38,7 @@ export default function App() {
         <ScrollToTop />
         <div className="flex flex-col min-h-screen">
           <Navbar />
-          <main className="flex-grow pt-24 bg-background text-text-main"> {/* pt-24 offsets the fixed navbar */}
+          <main className="flex-grow bg-background text-text-main">
             <Routes>
               <Route path="/" element={<Home />} />
               

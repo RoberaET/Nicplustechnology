@@ -67,7 +67,7 @@ function MetricCounter({
   useEffect(() => {
     if (!animate) return;
 
-    let start = 0;
+
     const end = metric.value;
     const duration = 1600;
     const startTime = performance.now() + delay;

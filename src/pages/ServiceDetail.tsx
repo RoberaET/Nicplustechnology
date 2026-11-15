@@ -154,7 +154,11 @@ export function ServiceDetail() {
                 <div className="border-t border-white/20 pt-6 space-y-3 mt-2">
                   <div className="flex items-center gap-3 text-sm text-white/80">
                     <Phone className="h-4 w-4 shrink-0" />
-                    <span>+251 941552458</span>
+                    <div className="flex flex-wrap items-center gap-x-2">
+                      <a href="tel:+251941552458" className="hover:text-white transition-colors">+251 941552458</a>
+                      <span className="text-white/50">/</span>
+                      <a href="tel:+251936561899" className="hover:text-white transition-colors">+251 936561899</a>
+                    </div>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-white/80">
                     <Mail className="h-4 w-4 shrink-0" />
